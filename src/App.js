@@ -5,6 +5,7 @@ import Header from "./componentes/Header";
 import MiOrg from "./componentes/MiOrg";
 import Equipo from "./componentes/Equipo";
 import Footer from "./componentes/Footer";
+import { Analytics } from '@vercel/analytics/react';
 import { v4 as uuid } from "uuid";
 
 
@@ -105,6 +106,7 @@ const like = (id) => {
   return (
     <div>
       <Header />
+      <Analytics/>
       {mostrarFormulario && (
         <Formulario
           equipos={equipos}
